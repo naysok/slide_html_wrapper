@@ -1,6 +1,9 @@
 # slide_html_wrapper  
 
 
+[https://html.naysok.org/slide_html_wrapper/](https://html.naysok.org/slide_html_wrapper/)  
+
+
 ### slide + web browser  
 
 スライド中で関連資料とかのリンクを開きたい時がある。   
