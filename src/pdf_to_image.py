@@ -9,7 +9,7 @@ i = 0
 
 for image in images:
     i += 1
-    image.save('../slide_images/slide_{}.png'.format(i), 'png')
+    image.save('../PRESENTATION/slide_images/slide_{}.png'.format(i), 'png')
     print(i)
 
 

@@ -9,9 +9,6 @@ def get_current_time():
     return(datetime.now().strftime('%Y-%m-%d_%H:%M:%S'))
 
 
-def read_template(file_path):
-    pass
-
 def gen_html_by_slide_images(dir_path):
 
     os.chdir(dir_path)
@@ -26,7 +23,7 @@ def gen_html_by_slide_images(dir_path):
             "<!-- page : {} -->\n"
             "<div class=\"slide\">\n"
             "<div class=\"image\">\n"
-            "<img src=\"../slide_images/slide_{}.png\" width=\"100%\" height=\"auto\"></img>\n"
+            "<img src=\"slide_images/slide_{}.png\" width=\"100%\" height=\"auto\"></img>\n"
             "<p>{} / {}</p>\n"
             "</div>\n"
             "<!-- // insert -->\n"
@@ -44,10 +41,6 @@ def gen_html_by_slide_images(dir_path):
 def write_file(fp, write_objs):
     f = open(fp, "w")
     f.writelines(write_objs)
-
-
-
-
 
 
 def build_html(dir_path, insert_txt):
@@ -76,5 +69,5 @@ def build_html(dir_path, insert_txt):
 
 
 
-_insert_ = gen_html_by_slide_images("../slide_images")
-build_html("../PRESENTATION", _insert_)
+_insert_ = gen_html_by_slide_images("../PRESENTATION/slide_images")
+build_html("../../PRESENTATION", _insert_)
